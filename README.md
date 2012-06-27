@@ -16,7 +16,7 @@ gem "rubypython", "0.5.1"  # For Heroku
 
 And then execute:
 
-    $ bundle
+    bundle
 
 ## Usage
 
@@ -34,7 +34,7 @@ rails g markdown:scaffold
 
 View
 
-```ruby
+```erb
 <%= raw show_markdown( markdown_text ) %>
 ```
 
