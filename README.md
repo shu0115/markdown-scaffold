@@ -6,15 +6,15 @@ Scaffold for Markdown.
 
 Add this line to your application's Gemfile:
 
-    gem 'markdown-scaffold'
+    # For Markdown
+    gem 'markdown-scaffold', :group => :development
+    gem 'redcarpet'
+    gem "pygments.rb"          # => 0.2.3
+    gem "rubypython", "0.5.1"  # For Heroku
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install markdown-scaffold
 
 ## Usage
 
