@@ -1,6 +1,6 @@
 # Markdown::Scaffold
 
-TODO: Write a gem description
+Scaffold for Markdown.
 
 ## Installation
 
@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Generate
+
+```
+rails g markdown:scaffold
+----------
+      create  app/assets/stylesheets/pygments.css
+      create  app/models/html_with_pygments.rb
+      insert  app/controllers/application_controller.rb
+      create  config/initializers/ruby_python.rb
+----------
+```
+
+View
+
+```ruby
+<%= raw show_markdown( markdown_text ) %>
+```
 
 ## Contributing
 
