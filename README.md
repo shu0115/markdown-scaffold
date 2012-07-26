@@ -35,7 +35,7 @@ rails g markdown:scaffold
 View
 
 ```erb
-<%= raw show_markdown( markdown_text ) %>
+<%= raw show_markdown( "markdown_text" ) %>
 ```
 
 ## Contributing
