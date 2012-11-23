@@ -2,6 +2,10 @@
 require "markdown-scaffold/version"
 require 'rails/generators'
 
+require 'redcarpet'
+require 'pygments.rb'
+require 'rubypython'
+
 module Markdown
   module Generators
     class ScaffoldGenerator < ::Rails::Generators::Base
