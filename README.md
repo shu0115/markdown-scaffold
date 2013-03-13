@@ -8,10 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 # For Markdown
-gem 'markdown-scaffold', :group => :development
-gem 'redcarpet'
-gem "pygments.rb"          # => 0.2.3
-gem "rubypython", "0.5.1"  # For Heroku
+gem 'markdown-scaffold'
 ```
 
 And then execute:
@@ -35,7 +32,7 @@ rails g markdown:scaffold
 View
 
 ```erb
-<%= raw show_markdown( "markdown_text" ) %>
+<%=raw show_markdown( "markdown_text" ) %>
 ```
 
 ## Contributing

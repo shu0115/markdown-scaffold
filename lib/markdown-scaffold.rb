@@ -33,9 +33,8 @@ module Markdown
         content += "    html_render = HtmlWithPygments.new( hard_wrap: true, filter_html: true )\n"
         content += "    markdown    = Redcarpet::Markdown.new( html_render, autolink: true, fenced_code_blocks: true, space_after_headers: true )\n"
         content += "\n"
-        content += "    return markdown.render( text )\n"
+        content += "    return markdown.render( text.to_s )\n"
         content += "  end\n"
-        content += "\n"
         content += "  helper_method :show_markdown\n"
 
         insert_into_file( "app/controllers/application_controller.rb", content.force_encoding('ASCII-8BIT'), after: "private\n" )
