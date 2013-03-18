@@ -7,7 +7,7 @@ Scaffold for Markdown.
 Add this line to your application's Gemfile:
 
 ```ruby
-# For Markdown
+# Markdown
 gem 'markdown-scaffold'
 ```
 
@@ -25,7 +25,6 @@ rails g markdown:scaffold
       create  app/assets/stylesheets/pygments.css
       create  app/models/html_with_pygments.rb
       insert  app/controllers/application_controller.rb
-      create  config/initializers/ruby_python.rb
 ----------
 ```
 

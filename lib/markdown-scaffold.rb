@@ -9,13 +9,10 @@ require 'rubypython'
 module Markdown
   module Generators
     class ScaffoldGenerator < ::Rails::Generators::Base
-
       source_root File.expand_path("../markdown-scaffold", __FILE__)
       desc "This generator scaffold for Markdown"
 
-      #-------------------#
-      # generate_scaffold #
-      #-------------------#
+      # Generateコマンド実行処理
       def generate_scaffold
         # stylesheets/pygments.css
         copy_file( "templates/pygments.css", "app/assets/stylesheets/pygments.css" )
@@ -33,16 +30,15 @@ module Markdown
         content += "    html_render = HtmlWithPygments.new( hard_wrap: true, filter_html: true )\n"
         content += "    markdown    = Redcarpet::Markdown.new( html_render, autolink: true, fenced_code_blocks: true, space_after_headers: true )\n"
         content += "\n"
-        content += "    return markdown.render( text.to_s )\n"
+        content += "    return markdown.render( text.to_s ) rescue text\n"
         content += "  end\n"
         content += "  helper_method :show_markdown\n"
 
         insert_into_file( "app/controllers/application_controller.rb", content.force_encoding('ASCII-8BIT'), after: "private\n" )
 
         # initializers/ruby_python.rb
-        copy_file( "templates/ruby_python.rb", "config/initializers/ruby_python.rb" )
+#        copy_file( "templates/ruby_python.rb", "config/initializers/ruby_python.rb" )
       end
-
     end
   end
 end

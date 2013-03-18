@@ -16,6 +16,8 @@ Gem::Specification.new do |gem|
   gem.version       = Markdown::Scaffold::VERSION
 
   gem.add_dependency 'redcarpet'
-  gem.add_dependency 'pygments.rb', "0.2.3"
-  gem.add_dependency 'rubypython', "0.5.1"
+  # gem.add_dependency 'pygments.rb', "0.2.3"
+  # gem.add_dependency 'rubypython', "0.5.1"
+  gem.add_dependency 'pygments.rb'
+  gem.add_dependency 'rubypython'
 end
