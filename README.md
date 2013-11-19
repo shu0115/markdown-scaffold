@@ -25,7 +25,7 @@ rails g markdown:scaffold
       create  app/assets/stylesheets/pygments.css
       create  app/models/html_with_pygments.rb
       insert  app/controllers/application_controller.rb
-      ----------
+----------
 ```
 
 View
