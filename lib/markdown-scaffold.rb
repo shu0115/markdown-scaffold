@@ -1,4 +1,3 @@
-# coding: utf-8
 require "markdown-scaffold/version"
 require 'rails/generators'
 
@@ -22,10 +21,7 @@ module Markdown
 
         # controllers/application_controller.rb
         content = "\n"
-        content += "  #---------------#\n"
-        content += "  # show_markdown #\n"
-        content += "  #---------------#\n"
-        content += "  # Markdown変換\n"
+        content += "  # Markdown変換表示\n"
         content += "  def show_markdown( text )\n"
         content += "    html_render = HtmlWithPygments.new( hard_wrap: true, filter_html: true )\n"
         content += "    markdown    = Redcarpet::Markdown.new( html_render, autolink: true, fenced_code_blocks: true, space_after_headers: true )\n"

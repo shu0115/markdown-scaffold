@@ -3,7 +3,7 @@ require File.expand_path('../lib/markdown-scaffold/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Shun Matsumoto"]
-  gem.email         = ["shun.matsumoto@pixta.co.jp"]
+  gem.email         = ["s.matsumoto0115@gmail.com"]
   gem.description   = %q{Scaffold for Markdown.}
   gem.summary       = %q{Markdown Scaffold}
   gem.homepage      = "https://github.com/shu0115/markdown-scaffold"
