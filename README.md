@@ -25,13 +25,21 @@ rails g markdown:scaffold
       create  app/assets/stylesheets/pygments.css
       create  app/models/html_with_pygments.rb
       insert  app/controllers/application_controller.rb
-----------
+      ----------
 ```
 
 View
 
+* erb
+
 ```erb
-<%=raw show_markdown( "markdown_text" ) %>
+<%=raw show_markdown("markdown_text") %>
+```
+
+* haml
+
+```haml
+=raw show_markdown("markdown_text")
 ```
 
 ## Contributing
