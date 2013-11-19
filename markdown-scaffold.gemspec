@@ -1,4 +1,3 @@
-# -*- encoding: utf-8 -*-
 require File.expand_path('../lib/markdown-scaffold/version', __FILE__)
 
 Gem::Specification.new do |gem|
@@ -7,6 +6,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Scaffold for Markdown.}
   gem.summary       = %q{Markdown Scaffold}
   gem.homepage      = "https://github.com/shu0115/markdown-scaffold"
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
